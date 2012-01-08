@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>SWTOR Recruitment Module</name>
+    <author>eivl</author>
+    <version>1.7</version>
+    <description>A module that displays the guild recruitment status of a World of Warcraft guild. Originally developed by Dethrock and modified for Joomla 1.5 by Darkpippi and reedited by eivl for Joomla 1.6+</description>
+    <files>
+        <filename module="mod_recruitment">mod_recruitment.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>	
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>images/sithwarrior.png</filename>
+        <filename>images/bountyhunter.png</filename>
+        <filename>images/imperialagent.png</filename>
+        <filename>images/sithinquisitor.png</filename>
+        
+    </files>
+    <config>
+    	<fields name="params">
+    		<fieldset name="basic">
+    
+ <field name="RecruitmentStatus" type="list" default="Closed" label="Recruitment Status:" description="Are you recruiting or not?">
+            		<option value="Open">Open</option>
+                      	<option value="Closed">Closed</option>
+    </field>                  	  
+    <field name="Sith Warrior" type="list" default="Closed" label="Sith Warrior Need:" description="Your level of need for this class.">
+    			<option value="High">High</option>
+			<option value="Medium">Medium</option>
+			<option value="Low">Low</option>
+			<option value="Closed">Closed</option>
+    </field>    
+    <field name="SithWarriorBlurb" type="text" default="" label="Sith Warrior Blurb:" description="A small place to put class spec requirements or whatever."/>    
+    <field name="Sith Inquisitor" type="list" default="Closed" label="Sith Inquisitor Need:" description="Your level of need for this class.">
+        		<option value="High">High</option>
+                  	<option value="Medium">Medium</option>
+                  	<option value="Low">Low</option>
+                  	<option value="Closed">Closed</option>
+    </field>    
+    <field name="SithInquisitorBlurb" type="text" default="" label="Sith Inquisitor Blurb:" description="A small place to put class spec requirements or whatever."/>    
+    <field name="Bounty Hunter" type="list" default="Closed" label="Bounty Hunter Need:" description="Your level of need for this class.">
+        		<option value="High">High</option>
+                  	<option value="Medium">Medium</option>
+                  	<option value="Low">Low</option>
+                  	<option value="Closed">Closed</option>
+    </field>    
+    <field name="BountyHunterBlurb" type="text" default="" label="Bounty Hunter Blurb:" description="A small place to put class spec requirements or whatever."/>        
+    <field name="Imperial Agent" type="list" default="Closed" label="Imperial Agent Need:" description="Your level of need for this class.">
+        		<option value="High">High</option>
+                  	<option value="Medium">Medium</option>
+                  	<option value="Low">Low</option>
+                  	<option value="Closed">Closed</option>
+    </field>    
+    <field name="ImperialAgentBlurb" type="text" default="" label="ImperialAgentBlurb:" description="A small place to put class spec requirements or whatever."/>    
+    <field name="RecruitmentBlurb" type="text" default="" label="Recruitment Blurb:" description="A small place to put something for requirments or whatever."/>
+
+
+    		</fieldset>
+    	</fields>
+    </config>
+</install>
