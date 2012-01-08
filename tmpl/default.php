@@ -14,6 +14,11 @@ $SithWarriorBlurb=$params->get('SithWarriorBlurb');
 $SithInquisitorBlurb=$params->get('SithInquisitorBlurb');
 $BountyHunterBlurb=$params->get('BountyHunterBlurb');
 $ImperialAgentBlurb=$params->get('ImperialAgentBlurb');
+
+$ColorHigh=$params->get('Color High');
+$ColorMedium=$params->get('Color Medium');
+$ColorLow=$params->get('Color Low');
+$ColorClosed=$params->get('Color Closed');
  
 $content   = "<table border=\"0\" cellpadding=\"1\" cellspacing=\"0\" width=\"100%\">";
 $content  .= "  <tbody>";
@@ -24,7 +29,7 @@ $content  .= "          <tbody>";
 $content  .= "            <tr>";
 
 	if ($RecruitmentStatus == "Closed"){
-		$content  .= "              <td><div align=\"center\"><font class=\"content\"><b>Recruitment is currently <font color=\"#ff0000\">CLOSED!</font></b></font>";
+		$content  .= "              <td><div align=\"center\"><font class=\"content\"><b>Recruitment is currently <font color=\"$ColorClosed\">CLOSED!</font></b></font>";
 	} else{  //open
 		$content  .= "              <td><div align=\"center\"><font class=\"content\">We are currently looking for new members of the following classes: </font>";
 
@@ -43,13 +48,13 @@ $content  .= "            <tr>";
 	$content  .= "                            </table></td>";
 
 		if ($SithWarrior == "High"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#00CC00\">High</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorHigh\">High</font></b></font></td>";
 		} else if ($SithWarrior == "Medium"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FFCC00\">Medium</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorMedium\">Medium</font></b></font></td>";
 		} else if ($SithWarrior == "Low"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FF6600\">Low</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorLow\">Low</font></b></font></td>";
 		} else if ($SithWarrior == "Closed"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#ff0000\">Closed</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorClosed\">Closed</font></b></font></td>";
 		}
 	$content  .= "                          </tr>";
 
@@ -78,13 +83,13 @@ $content  .= "            <tr>";
 	$content  .= "                            </table></td>";
 
 		if ($SithInquisitor == "High"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#00CC00\">High</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorHigh\">High</font></b></font></td>";
 		} else if ($SithInquisitor == "Medium"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FFCC00\">Medium</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorMedium\">Medium</font></b></font></td>";
 		} else if ($SithInquisitor == "Low"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FF6600\">Low</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorLow\">Low</font></b></font></td>";
 		} else if ($SithInquisitor == "Closed"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#ff0000\">Closed</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorClosed\">Closed</font></b></font></td>";
 		}
 
 	$content  .= "                          </tr>";
@@ -113,13 +118,13 @@ $content  .= "            <tr>";
 	$content  .= "                            </table></td>";
 
 		if ($BountyHunter == "High"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#00CC00\">High</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorHigh\">High</font></b></font></td>";
 		} else if ($BountyHunter == "Medium"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FFCC00\">Medium</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorMedium\">Medium</font></b></font></td>";
 		} else if ($BountyHunter == "Low"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FF6600\">Low</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorLow\">Low</font></b></font></td>";
 		} else if ($BountyHunter == "Closed"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#ff0000\">Closed</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorClosed\">Closed</font></b></font></td>";
 		}
 
 	$content  .= "                          </tr>";
@@ -148,13 +153,13 @@ $content  .= "            <tr>";
 	$content  .= "                            </table></td>";
 
 		if ($ImperialAgent == "High"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#00CC00\">High</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorHigh\">High</font></b></font></td>";
 		} else if ($ImperialAgent == "Medium"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FFCC00\">Medium</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorMedium\">Medium</font></b></font></td>";
 		} else if ($ImperialAgent == "Low"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#FF6600\">Low</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorLow\">Low</font></b></font></td>";
 		} else if ($ImperialAgent == "Closed"){
-			$content  .= "                            <td><font class=\"content\"><b><font color=\"#ff0000\">Closed</font></b></font></td>";
+			$content  .= "                            <td><font class=\"content\"><b><font color=\"$ColorClosed\">Closed</font></b></font></td>";
 		}
 
 	$content  .= "                          </tr>";
