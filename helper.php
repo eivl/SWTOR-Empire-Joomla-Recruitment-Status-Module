@@ -21,28 +21,20 @@ class modRecruitmentHelper
      */    
     function getRecruit( $params )
     {
-        return $RecruitmentStatus=$params->get('RecruitmentStatus');
-$RecruitmentBlurb=$params->get('RecruitmentBlurb');
+        return
+			$RecruitmentStatus=$params->get('RecruitmentStatus');
+			$RecruitmentBlurb=$params->get('RecruitmentBlurb');
+			
+			$SithWarrior=$params->get('Sith Warrior');
+			$SithInquisitor=$params->get('Sith Inquisitor');
+			$BountyHunter=$params->get('Bounty Hunter');
+			$ImperialAgent=$params->get('Imperial Agent');
+			
+			$SithWarriorBlurb=$params->get('SithWarriorBlurb');
+			$SithInquisitorBlurb=$params->get('SithInquisitorBlurb');
+			$BountyHunterBlurb=$params->get('BountyHunterBlurb');
+			$ImperialAgentBlurb=$params->get('ImperialAgentBlurb');
 
-$druid=$params->get('Druid');
-$hunter=$params->get('Hunter');
-$mage=$params->get('Mage');
-$paladin=$params->get('Paladin');
-$priest=$params->get('Priest');
-$rogue=$params->get('Rogue');
-$shaman=$params->get('Shaman');
-$warlock=$params->get('Warlock');
-$warrior=$params->get('Warrior');
-
-$druidBlurb=$params->get('DruidBlurb');
-$hunterBlurb=$params->get('HunterBlurb');
-$mageBlurb=$params->get('MageBlurb');
-$paladinBlurb=$params->get('PallyBlurb');
-$priestBlurb=$params->get('PriestBlurb');
-$rogueBlurb=$params->get('RogueBlurb');
-$shamanBlurb=$params->get('ShamanBlurb');
-$warlockBlurb=$params->get('WarlockBlurb');
-$warriorBlurb=$params->get('WarriorBlurb');
 
     }
 }
