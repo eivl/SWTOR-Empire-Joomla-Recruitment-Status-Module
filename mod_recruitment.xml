@@ -57,7 +57,7 @@
 
     		</fieldset>
     		<fieldset name="Color">
-    		<field name="Color High" type="list" default="Green" label="Change Color on High demand" description="The color on classes with high demand">
+    		<field name="Color High" type="list" default="MediumSeaGreen" label="Change Color on High demand" description="The color on classes with high demand">
     					<option value="Black">Black</option>
     					<option value="Navy">Navy</option>
     					<option value="DarkBlue">DarkBlue</option>
